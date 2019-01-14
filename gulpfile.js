@@ -11,13 +11,15 @@ var styleSrc = 'scss/main.scss';
 
 gulp.task('styles', function() {
   return gulp.src( styleSrc )
-    .pipe( sass( {
-        errLogToConsole: true,
-        style: 'expanded',
-        precision: 10
-    } ) )
+    .pipe(sass({
+        style: 'expanded'
+    }))
 
     .pipe( gulp.dest( styleDest ) )
     .pipe(gulp.dest(styleDest))
-    .pipe( notify( { message: 'TASK: "styles" Completed!', onLast: true } ) )
+    //.pipe( notify( { message: 'TASK: "styles" Completed!', onLast: true } ) )
+});
+
+gulp.task('watch', function() {
+    gulp.watch('scss/*.scss', gulp.series('styles'));
 });

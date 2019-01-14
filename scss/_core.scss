@@ -1,0 +1,44 @@
+body {
+	/*
+		target body size: 18px
+		typical browser size: 16px;
+		18 / 16 = 1.125rem
+	*/
+	font-size: 1.125rem;
+	font: 1.125rem 'Open Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+	max-width: 540px;
+	margin: 0 auto;
+}
+
+.container {
+	margin: 0 25px;
+}
+
+.header {
+	padding: 23px 0 12px 0;
+	position: relative;
+	border-bottom: 1px solid $border-color;
+
+	&__brand {
+		vertical-align: middle;
+	}
+
+	&__hide-arrow {
+		position: absolute;
+    right: 25px;
+    top: 39px;
+   }
+
+	h1 {
+		font-size: 1.3rem;
+    font-weight: bold;
+		position: absolute;
+   	top: 25px;
+    left: 96px;
+    color: $h1-color;
+	}
+}
