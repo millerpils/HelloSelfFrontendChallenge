@@ -53,17 +53,12 @@ html {
   margin: auto; }
 
 body {
-  /*
-		target body size: 18px
-		typical browser size: 16px;
-		18 / 16 = 1.125rem
-	*/
   font-size: 1.125rem;
   font: 1.125rem 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   background-color: #000;
   color: #2b2b2b;
-  /* vertically align */
+  line-height: 1.4;
   display: table-cell;
   vertical-align: middle; }
 
@@ -75,9 +70,6 @@ h1 {
 h2 {
   font-size: 1.3rem;
   font-weight: bold; }
-
-p {
-  line-height: 1.4; }
 
 .wrapper {
   background-color: #fff;
@@ -105,11 +97,16 @@ header {
     left: 96px; }
 
 section.opening-section {
-  margin-bottom: 40px; }
+  padding-bottom: 18px; }
   section.opening-section h2 {
     color: #cc4081;
     margin-bottom: 5px; }
 
-section.closing-section h2 {
-  color: #70b3e4;
-  margin-bottom: 10px; }
+section.column-blocks {
+  border-bottom: 1px solid #f8f8f8; }
+
+section.closing-section {
+  padding-top: 20px; }
+  section.closing-section h2 {
+    color: #70b3e4;
+    margin-bottom: 10px; }
